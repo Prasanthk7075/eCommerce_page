@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins"sans-serif;
+}
+
+.navbar {
+    font-size: 16px;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+    padding: 0px 20px !important;
+    color: #000;
+    transition: 0.5s ease !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    background-color: rgb(139, 3, 55);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.navbar i:hover {
+    color: rgb(224, 36, 108);
+    background-color: transparent !important;
+}
+
+.navbar i {
+    padding: 7px 7px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+/* .heading {
+    position: relative;
+    top: 10rem;
+} */
+
+#home span {
+    color: rgb(139, 3, 55);
+    font-weight: bolder;
+}
+
+.heading h1 {
+    font-weight: bolder;
+}
+
+#home button {
+    font-size: 18px;
+    width: 150px;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: rgb(139, 3, 55);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none !important;
+}
+
+@media only screen and (max-width:991px) {
+    #navbarSupportedContent>ul {
+        margin: 1rem !important;
+        justify-content: flex-end !important;
+        align-items: flex-end !important;
+        align-items: right !important;
+    }
+
+    #navbarSupportedContent>ul>li:nth-child(n)>a {
+        padding: 10px 0;
+        position: relative !important;
+        right: -20px;
+    }
+
+    .navbar i {
+        padding: 7px 20px;
+        position: relative !important;
+        right: -20px;
+    }
+}
+
+#bar {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 7px;
+    cursor: pointer;
+    color: black;
+}
+
+#home {
+    background-image: url('/assets/img/back.jpg');
+    width: 100%;
+    height: 110vh;
+    background-repeat: no-repeat;
+    background-position: top 10px center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+#home button:hover {
+    background-color: rgb(189, 2, 74);
+}
+
+.login {
+    padding: 4px 0 !important;
+    margin-left: 20px;
+}
+
+.login:hover {
+    background-color: transparent !important;
+    color: rgb(224, 36, 108);
+}
+
+.login-sec {
+    display: flex;
+}
+
+#new .one img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: scale 400ms;
+    background-color: #ffff;
+}
+
+.one:hover img {
+    scale: 110%;
+}
+
+#new .one {
+    overflow: hidden;
+}
+
+#new .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+    width: 100%;
+    height: 100%;
+}
+
+.details button {
+    display: inline-block;
+    font-size: 14px;
+    border: none;
+    padding: 2.5px;
+    border-bottom: 1px solid black;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    background-color: transparent;
+    transform: translateY(50px);
+    transition: 0.3s;
+    font-weight: 500;
+    outline: none;
+}
+
+.details button:hover {
+    color: rgb(90, 8, 49);
+    border-bottom: 1px solid rgb(80, 3, 50);
+}
+
+#new .one:nth-child(1) .details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+}
+
+#new .one:nth-child(2) .details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#new .one:nth-child(3) .details {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    text-align: right;
+}
+
+.buy-btn {
+    border: none;
+    background-color: rgb(139, 3, 55);
+    padding: 3px 15px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    outline: none !important;
+    cursor: pointer;
+    width: 110px;
+    font-size: 18px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s;
+}
+
+/* #future {
+    z-index: -1 !important;
+} */
+
+
+hr {
+    width: 35px;
+    height: 2px;
+    background-color: orangered;
+}
+
+.products:hover .buy-btn {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.products {
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.products img {
+    transition: 0.3s ease;
+    width: 100%;
+    height: auto;
+}
+
+.star {
+    padding: 10px 0;
+}
+
+.star i {
+    color: rgb(226, 188, 17);
+}
+
+#banner {
+    background-image: url('/assets/img/banner/2.jpg');
+    width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-position: top 70px center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#banner h4 {
+    color: #DBDBDB;
+}
+
+#banner h1 {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#banner .buy-btn {
+    opacity: 1 !important;
+    outline: none;
+    transition: 0.5s;
+    border-radius: 2px;
+    border: none;
+    font-size: 14px;
+}
+
+#banner .buy-btn:hover {
+    background-color: rgb(185, 18, 82);
+    color: white;
+}
+
+.shop-list a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer h6 {
+    color: rgb(189, 186, 186)
+}
+
+.icons a {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: all 0.3s;
+}
+
+
+.icons a:nth-child(1):hover {
+    color: rgb(7, 102, 226);
+    background-color: white;
+    border-radius: 50%;
+}
+
+.icons a:nth-child(2):hover {
+    color: rgb(7, 102, 226);
+    background-color: white;
+    border-radius: 50%;
+}
+
+.icons a:nth-child(3):hover {
+    color: rgb(185, 11, 20) !important;
+    background-color: white;
+    border-radius: 50%;
+}
