@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
             integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -16,14 +15,12 @@
             crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-        <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="all"> -->
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/js/script.js">
         <link rel="stylesheet" href="assets/js/bootstrap.js">
-        <title>ClothShop</title>
+        <title>Shop</title>
     </head>
     <body>
-        <!-- nav-section -->
         <nav class="navbar navbar-expand-lg bg-light py-3 fixed-top">
             <div class="container">
 
@@ -41,11 +38,11 @@
                     <ul class="navbar-nav ml-auto">
 
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link " href="shop.html">Shop</a>
+                            <a class="nav-link active" href="#">Shop</a>
                         </li>
 
                         <li class="nav-item">
@@ -82,66 +79,19 @@
                 </div>
             </div>
         </nav>
-        <!-- banner-section -->
-        <section id="home">
-            <div class="container heading">
-                <h5>New arraivals</h5>
-                <h1><span>Best Price </span>This Week</h1>
-                <p>shoomatic offers your very comfirtable time <br>on walking and exercises</p>
-                <button>Shop now</button>
-            </div>
-        </section>
-        <!-- brands-section -->
-        <section id="brand" class="container">
-            <d class="row m-0 py-5">
-                <img class="image-fluid brand col-lg-2 col-md-4 col-6" src="assets/img/brand/1.png" alt="">
-                <img class="image-fluid brand col-lg-2 col-md-4 col-6" src="assets/img/brand/2.png" alt="">
-                <img class="image-fluid brand col-lg-2 col-md-4 col-6" src="assets/img/brand/3.png" alt="">
-                <img class="image-fluid brand col-lg-2 col-md-4 col-6" src="assets/img/brand/4.png" alt="">
-                <img class="image-fluid brand col-lg-2 col-md-4 col-6" src="assets/img/brand/5.png" alt="">
-                <img class="image-fluid brand col-lg-2 col-md-4 col-6" src="assets/img/brand/6.png" alt="">
-                </div>
-        </section>
-        <!-- new-arraivals -->
-        <section id="new" class="w-100">
-            <div class="row p-0 m-0">
-                <div class="one col-lg-4 col-md-4 col-12 p-0">
-                    <img class="image-fluid" src="assets/img/new/1.jpg" alt="">
-                    <div class="details">
-                        <h3>Extreme Rare Sneakers</h3>
-                        <button>Shop Now</button>
-                    </div>
-                </div>
 
-                <div class="one col-lg-4 col-md-4 col-12 p-0">
-                    <img class="image-fluid" src="assets/img/new/5.jpg" alt="">
-                    <div class="details">
-                        <h3>Awesome rings upto 15% off</h3>
-                        <button>Shop Now</button>
-                    </div>
-                </div>
+        <section id="future" class="my-3 py-3">
 
-                <div class="one col-lg-4 col-md-4 col-12 p-0">
-                    <img class="image-fluid" src="assets/img/new/2.jpg" alt="">
-                    <div class="details">
-                        <h3>Kids wear upto 50% off</h3>
-                        <button>Shop Now</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <script src="assets/js/script.js"></script>
-        <!-- future-items -->
-        <section id="future">
-            <div class="container text-center my-5">
-                <h3>Our featured</h3>
-                <hr class="mx-auto">
+            <div class="container mt-5 py-5">
+                <h1>Our Featured</h1>
+                <hr class="">
                 <p>Here you can check out our new products with fair price on ClothShop</p>
             </div>
 
-            <div class="row mx-auto container-fluid">
-                <div class="products text-center col-lg-3 col-md-4 col-12">
-                    <img class="image-fluid mb-3" src="assets/img/featured/1.jpg" alt="">
+            <div class="row mx-auto container">
+                <div class="products text-center col-lg-3 col-md-4 col-12"
+                    onclick="window.location.href='cart_product.html';">
+                    <img class="image-fluid mb-3" src="assets/img/shop/1.jpg" alt="">
                     <div class="star">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -151,11 +101,11 @@
                     </div>
                     <h4 class="p-name">White Sneaker</h4>
                     <h5 class="p-price">$58.00</h5>
-                    <button class="buy-btn">Buy</button>
+                    <a href="cart_product.html"><button class="buy-btn">Buy</button></a>
                 </div>
 
                 <div class="products text-center col-lg-3 col-md-4 col-12">
-                    <img class="image-fluid mb-3" src="assets/img/featured/2.jpg" alt="">
+                    <img class="image-fluid mb-3" src="assets/img/shop/2.jpg" alt="">
                     <div class="star">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -169,7 +119,7 @@
                 </div>
 
                 <div class="products text-center col-lg-3 col-md-4 col-12">
-                    <img class="image-fluid mb-3" src="assets/img/featured/3.jpg" alt="">
+                    <img class="image-fluid mb-3" src="assets/img/shop/3.jpg" alt="">
                     <div class="star">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -183,39 +133,7 @@
                 </div>
 
                 <div class="products text-center col-lg-3 col-md-4 col-12">
-                    <img class="image-fluid mb-3" src="assets/img/featured/4.jpg" alt="">
-                    <div class="star">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                    <h4 class="p-name">White Sneaker</h4>
-                    <h5 class="p-price">$58.00</h5>
-                    <button class="buy-btn">Buy</button>
-                </div>
-            </div>
-        </section>
-        <!-- second-banner -->
-        <section id="banner" class="my-5 py-5">
-            <div class="container">
-                <h4>MID SEASON'S SALES</h4>
-                <h1>Automn Collectons <br> UP TO 20% Off</h1>
-                <button class="buy-btn py-2 text-uppercase">Shop Now</button>
-            </div>
-        </section>
-
-        <section id="clothes">
-            <div class="container text-center my-5">
-                <h3>Dresses and Jumpsuits</h3>
-                <hr class="mx-auto">
-                <p>Here you can check out our new products with fair price on ClothShop</p>
-            </div>
-
-            <div class="row mx-auto container-fluid">
-                <div class="products text-center col-lg-3 col-md-4 col-12">
-                    <img class="image-fluid mb-3" src="assets/img/clothes/1.jpg" alt="">
+                    <img class="image-fluid mb-3" src="assets/img/shop/4.jpg" alt="">
                     <div class="star">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -229,7 +147,21 @@
                 </div>
 
                 <div class="products text-center col-lg-3 col-md-4 col-12">
-                    <img class="image-fluid mb-3" src="assets/img/clothes/2.jpg" alt="">
+                    <img class="image-fluid mb-3" src="assets/img/shop/5.jpg" alt="">
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h4 class="p-name">White Sneaker</h4>
+                    <h5 class="p-price">$58.00</h5>
+                    <button class="buy-btn">Buy</button>
+                </div>
+
+                <div class="products text-center col-lg-3 col-md-4 col-12">
+                    <img class="image-fluid mb-3" src="assets/img/shop/6.jpg" alt="">
                     <div class="star">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -243,7 +175,7 @@
                 </div>
 
                 <div class="products text-center col-lg-3 col-md-4 col-12">
-                    <img class="image-fluid mb-3" src="assets/img/clothes/3.jpg" alt="">
+                    <img class="image-fluid mb-3" src="assets/img/shop/7.jpg" alt="">
                     <div class="star">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -257,7 +189,7 @@
                 </div>
 
                 <div class="products text-center col-lg-3 col-md-4 col-12">
-                    <img class="image-fluid mb-3" src="assets/img/clothes/1.jpg" alt="">
+                    <img class="image-fluid mb-3" src="assets/img/shop/8.jpg" alt="">
                     <div class="star">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -269,19 +201,10 @@
                     <h5 class="p-price">$58.00</h5>
                     <button class="buy-btn">Buy</button>
                 </div>
-            </div>
-        </section>
 
-        <section id="watches">
-            <div class="container text-center my-5">
-                <h3>Best Watches</h3>
-                <hr class="mx-auto">
-                <p>Here you can check out our new products with fair price on ClothShop</p>
-            </div>
 
-            <div class="row mx-auto container-fluid">
                 <div class="products text-center col-lg-3 col-md-4 col-12">
-                    <img class="image-fluid mb-3" src="assets/img/watches/1.jpg" alt="">
+                    <img class="image-fluid mb-3" src="assets/img/shop/9.jpg" alt="">
                     <div class="star">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -295,7 +218,7 @@
                 </div>
 
                 <div class="products text-center col-lg-3 col-md-4 col-12">
-                    <img class="image-fluid mb-3" src="assets/img/watches/2.jpg" alt="">
+                    <img class="image-fluid mb-3" src="assets/img/shop/10.jpg" alt="">
                     <div class="star">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -309,7 +232,7 @@
                 </div>
 
                 <div class="products text-center col-lg-3 col-md-4 col-12">
-                    <img class="image-fluid mb-3" src="assets/img/watches/3.jpg" alt="">
+                    <img class="image-fluid mb-3" src="assets/img/shop/11.jpg" alt="">
                     <div class="star">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -323,7 +246,7 @@
                 </div>
 
                 <div class="products text-center col-lg-3 col-md-4 col-12">
-                    <img class="image-fluid mb-3" src="assets/img/watches/4.jpg" alt="">
+                    <img class="image-fluid mb-3" src="assets/img/shop/12.jpg" alt="">
                     <div class="star">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -335,19 +258,10 @@
                     <h5 class="p-price">$58.00</h5>
                     <button class="buy-btn">Buy</button>
                 </div>
-            </div>
-        </section>
 
-        <section id="running shoes">
-            <div class="container text-center my-5">
-                <h3>Running Shoes</h3>
-                <hr class="mx-auto">
-                <p>Here you can check out our new products with fair price on ClothShop</p>
-            </div>
 
-            <div class="row mx-auto container-fluid">
                 <div class="products text-center col-lg-3 col-md-4 col-12">
-                    <img class="image-fluid mb-3" src="assets/img/shoes/1.jpg" alt="">
+                    <img class="image-fluid mb-3" src="assets/img/shop/13.jpg" alt="">
                     <div class="star">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -361,7 +275,7 @@
                 </div>
 
                 <div class="products text-center col-lg-3 col-md-4 col-12">
-                    <img class="image-fluid mb-3" src="assets/img/shoes/2.jpg" alt="">
+                    <img class="image-fluid mb-3" src="assets/img/shop/14.jpg" alt="">
                     <div class="star">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -375,7 +289,7 @@
                 </div>
 
                 <div class="products text-center col-lg-3 col-md-4 col-12">
-                    <img class="image-fluid mb-3" src="assets/img/shoes/3.jpg" alt="">
+                    <img class="image-fluid mb-3" src="assets/img/shop/15.jpg" alt="">
                     <div class="star">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -389,7 +303,64 @@
                 </div>
 
                 <div class="products text-center col-lg-3 col-md-4 col-12">
-                    <img class="image-fluid mb-3" src="assets/img/shoes/4.jpg" alt="">
+                    <img class="image-fluid mb-3" src="assets/img/shop/16.jpg" alt="">
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h4 class="p-name">White Sneaker</h4>
+                    <h5 class="p-price">$58.00</h5>
+                    <button class="buy-btn">Buy</button>
+                </div>
+
+
+                <div class="products text-center col-lg-3 col-md-4 col-12">
+                    <img class="image-fluid mb-3" src="assets/img/shop/17.jpg" alt="">
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h4 class="p-name">White Sneaker</h4>
+                    <h5 class="p-price">$58.00</h5>
+                    <button class="buy-btn">Buy</button>
+                </div>
+
+                <div class="products text-center col-lg-3 col-md-4 col-12">
+                    <img class="image-fluid mb-3" src="assets/img/shop/18.jpg" alt="">
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <h4 class="p-name">Brown Sneaker</h4>
+                    <h5 class="p-price">$98.00</h5>
+                    <button class="buy-btn">Buy</button>
+                </div>
+
+                <div class="products text-center col-lg-3 col-md-4 col-12">
+                    <img class="image-fluid mb-3" src="assets/img/shop/19.jpg" alt="">
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h4 class="p-name">Blue Leather bag</h4>
+                    <h5 class="p-price">$150.00</h5>
+                    <button class="buy-btn">Buy</button>
+                </div>
+
+                <div class="products text-center col-lg-3 col-md-4 col-12">
+                    <img class="image-fluid mb-3" src="assets/img/shop/20.jpg" alt="">
                     <div class="star">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -402,10 +373,21 @@
                     <button class="buy-btn">Buy</button>
                 </div>
             </div>
+            <!-- pagination part -->
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
         </section>
-
-        <!-- footer-section -->
-
         <footer class="bg-dark text-white">
             <div class="container-fluid mt-5 py-5 px-5">
                 <div class="row">
@@ -417,7 +399,7 @@
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-12 shop-list">
-                        <h4 class="pb-3">Featured</h4>
+                        <h4 class="pb-3">shop</h4>
                         <ul class="text-uppercase list-unstyled">
                             <li><a href="#">men</a></li>
                             <li><a href="#">women</a></li>
@@ -449,7 +431,7 @@
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-12">
-                        <h4 class="pb-3 w-20">instgram</h4>
+                        <h4 class="pb-2 w-15">instgram</h4>
                         <div class="row">
                             <img class="image-fluid w-25 h-auto m-2" src="assets/img/insta/1.jpg" alt="">
                             <img class="image-fluid w-25 h-auto m-2" src="assets/img/insta/2.jpg" alt="">
@@ -461,7 +443,7 @@
                     </div>
                 </div>
             </div>
-            <div class="copy-right pb-5">
+            <div class="copy-right pb-3">
                 <div class="row container mx-auto">
                     <div class="col-lg-3 col-md-3 col-12 mb-2">
                         <img src="assets/img/payment.png" alt="">
