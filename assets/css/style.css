@@ -117,6 +117,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+background-color: grey;
 }
 
 
@@ -274,6 +275,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+background-color: grey;
 }
 
 #banner h4 {
